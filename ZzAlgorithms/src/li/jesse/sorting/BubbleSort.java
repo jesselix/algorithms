@@ -1,7 +1,5 @@
 package li.jesse.sorting;
 
-import org.junit.Test;
-
 public class BubbleSort
 {
 	public static int[] bubble_sort(int[] arr) 
@@ -22,17 +20,6 @@ public class BubbleSort
 		}
 		
 		return arr;
-	}
-	
-	@Test
-	public void go_bubble()
-	{
-		int[] number = {95, 45, 15, 78, 84, 51, 24, 12};
-
-		number = bubble_sort(number);
-		for(int i = 0; i < number.length; i++) 
-			System.out.print(number[i] + " ");
-		System.out.println();
 	}
 }
 
