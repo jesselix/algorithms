@@ -2,7 +2,7 @@ package li.jesse.sorting;
 
 public class BubbleSort
 {
-	public static int[] bubble_sort(int[] arr) 
+	public static int[] bubbleSort(int[] arr) 
 	{
 		int i, j, temp, len = arr.length;
 		

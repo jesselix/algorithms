@@ -2,16 +2,19 @@ package li.jesse.sorting;
 
 import org.junit.Test;
 
-public class YyTest
+public class YySortingTest
 {
 	int[] number = {95, 45, 15, 78, 84, 51, 24, 12};
 	
 	@Test
-	public void test_bubble()
+	public void testBubbleSort()
 	{
-		number = BubbleSort.bubble_sort(number);
-		for(int i = 0; i < number.length; i++) 
+		number = BubbleSort.bubbleSort(number);
+		for(int i = 0; i < number.length; i++)
+		{
 			System.out.print(number[i] + " ");
+		}
+			
 		System.out.println();
 	}
 }
