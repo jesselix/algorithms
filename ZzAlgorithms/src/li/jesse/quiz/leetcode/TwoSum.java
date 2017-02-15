@@ -31,9 +31,9 @@ public class TwoSum
 	}
 	
 	@Test
-	public void twoSumTest()
+	public void testTwoSum()
 	{
-		int[] array = {2, 3, 5, 7};
+		int[] array = {2, 3, 5, 7, 2, 3};
 		
 		twoSum(array, 5);
 	}
