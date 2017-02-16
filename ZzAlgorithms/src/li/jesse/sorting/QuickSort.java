@@ -1,4 +1,4 @@
-package li.jesse.searching;
+package li.jesse.sorting;
 
 public class QuickSort
 {
