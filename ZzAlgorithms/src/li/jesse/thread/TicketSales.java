@@ -1,4 +1,4 @@
-package li.jesse.threads;
+package li.jesse.thread;
 
 public class TicketSales
 {
