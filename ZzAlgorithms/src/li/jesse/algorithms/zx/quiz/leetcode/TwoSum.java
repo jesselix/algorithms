@@ -1,7 +1,6 @@
-package li.jesse.quiz.leetcode;
+package li.jesse.algorithms.zx.quiz.leetcode;
 
 import org.junit.Test;
-
 
 /*
 #.1 Easy
@@ -39,9 +38,3 @@ public class TwoSum
 		twoSum(array, 5);
 	}
 }
-
-
-
-
-
-
