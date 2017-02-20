@@ -1,4 +1,4 @@
-package li.jesse.sorting;
+package li.jesse.algorithm.sorting;
 
 public class BubbleSort
 {
@@ -22,7 +22,3 @@ public class BubbleSort
 		return arr;
 	}
 }
-
-
-
-

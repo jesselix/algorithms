@@ -1,8 +1,10 @@
-package li.jesse.sorting;
+package li.jesse.algorithm.sorting;
 
 import org.junit.Test;
 
-public class ZySortingApp 
+import li.jesse.algorithm.sorting.BubbleSort;
+
+public class ZxSortingApp 
 {
 	int[] number = {95, 45, 15, 78, 84, 51, 24, 12};
 	
