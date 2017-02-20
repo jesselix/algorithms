@@ -2,7 +2,7 @@ package li.jesse.sorting;
 
 import org.junit.Test;
 
-public class YySortingTest
+public class ZySortingApp 
 {
 	int[] number = {95, 45, 15, 78, 84, 51, 24, 12};
 	
@@ -18,7 +18,3 @@ public class YySortingTest
 		System.out.println();
 	}
 }
-
-
-
-
