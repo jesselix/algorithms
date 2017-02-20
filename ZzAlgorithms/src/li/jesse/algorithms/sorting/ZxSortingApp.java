@@ -1,8 +1,8 @@
-package li.jesse.algorithm.sorting;
+package li.jesse.algorithms.sorting;
 
 import org.junit.Test;
 
-import li.jesse.algorithm.sorting.BubbleSort;
+import li.jesse.algorithms.sorting.BubbleSort;
 
 public class ZxSortingApp 
 {

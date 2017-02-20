@@ -1,4 +1,4 @@
-package li.jesse.algorithm.zx.quiz.leetcode;
+package li.jesse.algorithms.zx.quiz.leetcode;
 
 import org.junit.Test;
 
