@@ -18,15 +18,25 @@ public class RemoveDuplicatesFromSortedArray
 {
 	public int removeDuplicatesFromSortedArray(int[] nums)
 	{
-		return 1;
+		int count = 1;
+		
+		for (int i = 0; i < nums.length - 1; i++)
+		{
+			if (nums[i + 1] != nums[i])
+			{
+				count++;
+			}
+		}
+		
+		return count;
 	}
 	
 	@Test
 	public void testRemoveDuplicatesFromSortedArray()
 	{
-		int[] array = {0, 1, 3};
+		int[] array = {0, 1, 1, 3, 3, 3, 4, 4, 5};
 		
-		removeDuplicatesFromSortedArray(array);
+		System.out.println(removeDuplicatesFromSortedArray(array));
 	}
 }
 
