@@ -1,2 +1,2 @@
-# ZzAlgorithms_java
+# Algorithms
 Algorithms
