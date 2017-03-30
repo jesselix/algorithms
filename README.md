@@ -1,2 +1,2 @@
 # ZzAlgorithms
-Common Algorithms Knowledge and Solutions
+Algorithms Knowledge and Solutions
