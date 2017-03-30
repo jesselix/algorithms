@@ -1,6 +1,8 @@
-package li.jesse.algorithms.sorting;
+package li.jesse.test;
 
 import org.junit.Test;
+
+import li.jesse.algorithms.sorting.BubbleSort;
 
 public class SortingTest
 {
