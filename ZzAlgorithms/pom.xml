@@ -9,6 +9,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <artifactId>ZzAlgorithms</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <name>${project.groupId}:${project.artifactId}</name>
+  <url>https://github.com/jesselix</url>
+  <description>Algorithms Knowledge and Solutions</description>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -18,7 +22,4 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     </dependency>
   </dependencies>
   
-  <name>${project.groupId}:${project.artifactId}</name>
-  <url>https://github.com/jesselix</url>
-  <description>Algorithms Knowledge and Solutions</description>
 </project>
