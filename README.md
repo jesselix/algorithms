@@ -17,14 +17,14 @@
 | Other | Topological sort / Pancake sort / Spaghetti sort |
 
 #### Searching
-| Types |  |
+| Types | Searchings |
 | ------ | ------ |
 | List | Linear search / Binary search |
 | Trees / Graphs |  |
 | String |  |
 
 ### Data structures
-| Types |  |
+| Types | Data structures |
 | ------ | ------ |
 | Arrays | Bit array / Circular buffer / Dynamic array / Hash table / Hashed array tree / Sparse array |
 | Linked | Association list / Linked list / Skip list / Unrolled linked list / XOR linked list  |
