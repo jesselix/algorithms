@@ -1,10 +1,10 @@
-package li.jesse.test;
+package li.jesse.test.questions.leetcode;
 
 import org.junit.Test;
 
 import li.jesse.questions.leetcode.MissingNumber;
 
-public class LeetcodeTest
+public class MissingNumberTest
 {
 	int[] testArray =  {0, 1, 3};
 	
@@ -15,3 +15,5 @@ public class LeetcodeTest
 		System.out.println(result);
 	}
 }
+
+

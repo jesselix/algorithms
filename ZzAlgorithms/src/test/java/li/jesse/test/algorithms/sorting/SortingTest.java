@@ -1,4 +1,4 @@
-package li.jesse.test;
+package li.jesse.test.algorithms.sorting;
 
 import org.junit.Test;
 
