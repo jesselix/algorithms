@@ -70,10 +70,16 @@ public class BitTest
     @Test
     public void testSwap()
     {
-        Bit.swap(2,3);
+        int x = 2;
+        int y = 3;
+
+        Bit.swap(x, y);
+
+        System.out.println(x);
+        System.out.println(y);
     }
 }
-
+//
 
 
 
