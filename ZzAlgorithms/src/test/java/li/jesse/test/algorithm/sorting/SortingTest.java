@@ -11,6 +11,7 @@ public class SortingTest
     public void testBubbleSort()
     {
         number = BubbleSort.bubbleSort(number);
+
         for(int i = 0; i < number.length; i++)
         {
             System.out.print(number[i] + " ");
@@ -18,4 +19,5 @@ public class SortingTest
 
         System.out.println();
     }
+
 }
