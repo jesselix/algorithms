@@ -7,7 +7,6 @@ a and b are both 32-bit integers
 
 Example
 Given a=1 and b=2 return 3
-
  */
 public class APlusBProblem
 {
