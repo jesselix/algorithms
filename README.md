@@ -1,32 +1,57 @@
 # ZzAlgorithms
 
-## Contents
+## Algorithms
 
-### Algorithms
+### Sorting
 
-#### Sorting
-| Categories | Sortings |
-| ------ | ------ |
-| Exchange sorts | Bubble sort / Cocktail shaker sort / Odd–even sort / Comb sort /  Gnome sort / Quicksort / Slowsort / Stooge sort / Bogosort |
-| Selection sorts | Selection sort / Heapsort / Smoothsort / Cartesian tree sort / Tournament sort / Cycle sort / Weak heapsort |
-| Insertion sorts | Insertion sort / Shellsort / Splaysort / Tree sort / Library sort / Patience sorting |
-| Merge sorts | Merge sort / Cascade merge sort / Oscillating merge sort / Polyphase merge sort |
-| Distribution sorts | American flag sort / Bead sort / Bucket sort / Burstsort / Counting sort / Pigeonhole sort / Proxmap sort / Radix sort / Flashsort |
-| Concurrent sorts | Bitonic sorter / Batcher odd–even mergesort / Pairwise sorting network |
-| Hybrid sorts | Block merge sort / Timsort / Introsort / Spreadsort |
-| Other | Topological sort / Pancake sort / Spaghetti sort |
+#### Exchange sorts
+Bubble sort / Cocktail shaker sort / Odd–even sort / Comb sort /  Gnome sort / Quicksort / Slowsort / Stooge sort / Bogosort
 
-#### Searching
-| Types | Searchings |
-| ------ | ------ |
-| List | Linear search / Binary search |
-| Trees / Graphs |  |
-| String |  |
+#### Selection sorts
+Selection sort / Heapsort / Smoothsort / Cartesian tree sort / Tournament sort / Cycle sort / Weak heapsort
 
-### Data structures
-| Types | Data structures |
-| ------ | ------ |
-| Arrays | Bit array / Circular buffer / Dynamic array / Hash table / Hashed array tree / Sparse array |
-| Linked | Association list / Linked list / Skip list / Unrolled linked list / XOR linked list  |
-| Trees | B-tree / Binary search tree (AA tree / AVL tree / Red–black tree / Self-balancing tree / Splay tree) / Heap (Binary heap / Binomial heap / Fibonacci heap) / R-tree (R* tree / R+ tree / Hilbert R-tree) / Trie (Hash tree) |
-| Graphs | Binary decision diagram / Directed acyclic graph / Directed acyclic word graph  |
+#### Insertion sorts
+Insertion sort / Shellsort / Splaysort / Tree sort / Library sort / Patience sorting |
+| Merge sorts | Merge sort / Cascade merge sort / Oscillating merge sort / Polyphase merge sort
+
+#### Distribution sorts
+American flag sort / Bead sort / Bucket sort / Burstsort / Counting sort / Pigeonhole sort / Proxmap sort / Radix sort / Flashsort
+
+#### Concurrent sorts
+Bitonic sorter / Batcher odd–even mergesort / Pairwise sorting network
+
+#### Hybrid sorts
+Block merge sort / Timsort / Introsort / Spreadsort
+
+#### Other
+Topological sort / Pancake sort / Spaghetti sort
+
+### Searching
+
+#### List
+Linear search / Binary search
+
+#### Trees / Graphs
+blah blah blah
+
+#### String
+blah blah blah
+
+---
+
+## Data structures
+
+### Arrays
+blah blah blah
+
+### Lists
+blah blah blah
+
+### Trees
+blah blah blah
+
+### Hashes
+blah blah blah
+
+### Graphs
+blah blah blah
