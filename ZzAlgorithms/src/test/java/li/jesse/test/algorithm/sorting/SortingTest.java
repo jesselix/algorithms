@@ -2,11 +2,13 @@ package li.jesse.test.algorithm.sorting;
 
 import li.jesse.algorithm.sorting.BubbleSort;
 import li.jesse.algorithm.sorting.QuickSort;
+import li.jesse.algorithm.sorting.SelectionSort;
+import li.jesse.common.ArrayUtil;
 import org.junit.Test;
 
 public class SortingTest
 {
-    int[] numbers = {95, 45, 15, 78, 84, 51, 24, 12};
+    int[] numbers = {4, 9, 5, 8, 7, 0, 1, 3, 2, 6};
     int length = numbers.length;
 
     @Test
@@ -14,12 +16,7 @@ public class SortingTest
     {
         numbers = BubbleSort.bubbleSort(numbers);
 
-        for(int i = 0; i < numbers.length; i++)
-        {
-            System.out.print(numbers[i] + " ");
-        }
-
-        System.out.println();
+        ArrayUtil.printArray(numbers);
     }
 
     @Test
@@ -27,10 +24,19 @@ public class SortingTest
     {
         QuickSort quickSort = new QuickSort();
         quickSort.myQuickSort(numbers);
-        for (int i : numbers)
-        {
-            System.out.print(i + " ");
-        }
+//        for (int i : numbers)
+//        {
+//            System.out.print(i + " ");
+//        }
+
+        ArrayUtil.printArray(numbers);
+    }
+
+    @Test
+    public void testSelectionSort()
+    {
+        SelectionSort.selectionSort(numbers);
+        ArrayUtil.printArray(numbers);
     }
 
 }
