@@ -23,7 +23,7 @@ public class SortingTest
     public void testQuickSort()
     {
         QuickSort quickSort = new QuickSort();
-        quickSort.myQuickSort(numbers);
+        quickSort.quickSort(numbers);
 //        for (int i : numbers)
 //        {
 //            System.out.print(i + " ");

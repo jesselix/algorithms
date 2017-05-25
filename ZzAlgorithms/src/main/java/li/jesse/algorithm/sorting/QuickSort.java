@@ -5,7 +5,7 @@ public class QuickSort
     private int array[];
     private int length;
 
-    public void myQuickSort(int[] inputArr)
+    public void quickSort(int[] inputArr)
     {
         if (inputArr == null || inputArr.length == 0)
         {
@@ -13,10 +13,10 @@ public class QuickSort
         }
         this.array = inputArr;
         length = inputArr.length;
-        quickSort(0, length - 1);
+        quickSortGo(0, length - 1);
     }
 
-    public void quickSort( int lowerIndex, int higherIndex)
+    public void quickSortGo(int lowerIndex, int higherIndex)
     {
         int i = lowerIndex;
         int j = higherIndex;
@@ -43,11 +43,11 @@ public class QuickSort
 
         if (lowerIndex < j)
         {
-            quickSort(lowerIndex, j);
+            quickSortGo(lowerIndex, j);
         }
         if (i < higherIndex)
         {
-            quickSort(i, higherIndex);
+            quickSortGo(i, higherIndex);
         }
     }
 
