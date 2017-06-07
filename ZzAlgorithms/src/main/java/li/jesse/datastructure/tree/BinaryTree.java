@@ -1,100 +1,64 @@
 package li.jesse.datastructure.tree;
 
+import java.util.LinkedList;
+
 public class BinaryTree
 {
-    private TreeNode root;
+    private Node<Integer> root;
+
+    private int size;
 
     public BinaryTree()
     {
-
+        root = new Node<Integer>();
     }
 
-    public BinaryTree(TreeNode root)
-    {
-        this.root = root;
-    }
-
-    /**
-     * find the node
-     * @param key
-     * @return
-     */
-    public TreeNode find(int key)
-    {
-        if (this.root != null)
-        {
-            TreeNode currentNode = this.root;
-            while (currentNode.key != key)
-            {
-                if (key > currentNode.key)
-                {
-                    currentNode = currentNode.rightChild;
-                }
-                else
-                {
-                    currentNode = currentNode.leftChild;
-                }
-
-                if (currentNode == null)
-                {
-                    return null;
-                }
-            }
+    public BinaryTree(int[] values) {
+        System.out.print("新建binaryTree:");
+        for (int i : values) {
+            System.out.print(i);
         }
-        return null;
-    }
+        System.out.println();
+        boolean isLeft = true;
+        int len = values.length;
+        if (len == 0)
+            return ;
 
-    /**
-     * insert the node
-     * @param key
-     * @param value
-     */
-    public void insert(int key, Object value)
-    {
-        TreeNode node = new TreeNode(key, value);
-
-        if (this.root == null)
-        {
-            this.root = node;
-        }
-        else
-        {
-            TreeNode currentNode = this.root;
-
-            while (true)
-            {
-                if (key > currentNode.key) {
-                    if (currentNode.rightChild == null) {
-                        currentNode.rightChild = node;
-                        return;
-                    } else {
-                        currentNode = currentNode.rightChild;
-                    }
-                } else {
-                    if (currentNode.leftChild == null) {
-                        currentNode.leftChild = node;
-                        return;
-                    } else {
-                        currentNode = currentNode.leftChild;
-                    }
-                }
+        LinkedList<Node<Integer>> queue = new LinkedList<Node<Integer>>();
+        root = new Node<Integer>(values[0]);
+        queue.addLast(root);
+        Node parent = null;
+        Node current = null;
+        for (int i=1; i<len; i++) {
+            current = new Node<Integer>(values[i]);
+            queue.addLast(current);
+            if (isLeft)
+                parent = queue.getFirst();
+            else
+                parent = queue.removeFirst();
+            if (isLeft) {
+                parent.setLeftChild(current);
+                isLeft = false;
+            }else {
+                parent.setRightChild(current);
+                isLeft = true;
             }
         }
     }
 
-    public void show()
-    {
-        this.show(root);
+    public void inorder() {
+        System.out.print("binaryTree递归中序遍历:");
+        inorderTraverseRecursion(root);
+        System.out.println();
     }
 
-    private void show(TreeNode node)
-    {
-        if (node != null)
-        {
-            this.show(node.leftChild);
-            System.out.println(node.key + ":" + node.value);
-            this.show(node.rightChild);
-        }
+    private void inorderTraverseRecursion(Node<Integer> node) {
+        // TODO Auto-generated method stub
+        if (node.getLeftChild() != null)
+            inorderTraverseRecursion(node.getLeftChild());
+        System.out.print(node.getValue());
+        if (node.getRightChild() != null)
+            inorderTraverseRecursion(node.getRightChild());
     }
 }
 
