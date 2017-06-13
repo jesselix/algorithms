@@ -1,8 +1,5 @@
 package li.jesse.question.leetcode;
 
-import jdk.nashorn.internal.ir.IfNode;
-import sun.security.util.Length;
-
 /*
 # 53
 Easy
