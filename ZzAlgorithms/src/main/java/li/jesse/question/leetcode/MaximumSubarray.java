@@ -1,5 +1,8 @@
 package li.jesse.question.leetcode;
 
+import jdk.nashorn.internal.ir.IfNode;
+import sun.security.util.Length;
+
 /*
 # 53
 Easy
@@ -13,21 +16,31 @@ If you have figured out the O(n) solution, try coding another solution using the
  */
 public class MaximumSubarray
 {
-    public void maximumSubarray(int[] nums)
+    public static int maximumSubarray(int[] nums)
     {
         int maxSum = 0;
 
-        for (int i = 0; i < nums.length - 1; i++)
+        for (int i = 0; i < nums.length; i++)
         {
-            int temp;
-            temp = maxSum + nums[i];
+            int max = nums[i];
 
-            if (temp > maxSum)
+            if (max > maxSum)
+                maxSum = max;
+
+            for (int j = i + 1; j < nums.length; j++)
             {
-                maxSum = temp;
+                if (max + nums[j] >= max)
+                {
+                    max = max + nums[j];
+
+                    if (max > maxSum)
+                        maxSum = max;
+                }
+                else
+                    break;
             }
         }
 
-        System.out.println(maxSum);
+        return maxSum;
     }
 }
