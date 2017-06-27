@@ -39,6 +39,7 @@ Note:
 1. The height and width of the given matrix is in range [1, 100].
 2. The given r and c are all positive.
  */
+
 public class ReshapeTheMatrix
 {
     public static int[][] reshapeTheMatrix(int[][] array, int r, int c)
