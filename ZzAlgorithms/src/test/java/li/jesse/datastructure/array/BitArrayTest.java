@@ -1,4 +1,4 @@
-package li.jesse.test.datastructure.array;
+package li.jesse.datastructure.array;
 
 import li.jesse.datastructure.array.BitArray;
 import org.junit.Test;

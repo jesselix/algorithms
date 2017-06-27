@@ -1,4 +1,4 @@
-package li.jesse.test.datastructure.tree;
+package li.jesse.datastructure.tree;
 
 import org.junit.Test;
 

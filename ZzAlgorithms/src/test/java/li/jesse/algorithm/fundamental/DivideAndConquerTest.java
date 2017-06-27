@@ -1,4 +1,4 @@
-package li.jesse.test.algorithm.fundamental;
+package li.jesse.algorithm.fundamental;
 
 import li.jesse.algorithm.fundamental.DivideAndConquer;
 import org.junit.Test;

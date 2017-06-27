@@ -1,4 +1,4 @@
-package li.jesse.test.question.leetcode;
+package li.jesse.question.leetcode;
 
 import li.jesse.question.leetcode.ReshapeTheMatrix;
 import org.junit.Test;

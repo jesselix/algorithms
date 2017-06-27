@@ -1,4 +1,4 @@
-package li.jesse.test.algorithm.sorting;
+package li.jesse.algorithm.sorting;
 
 import li.jesse.algorithm.sorting.BubbleSort;
 import li.jesse.algorithm.sorting.QuickSort;

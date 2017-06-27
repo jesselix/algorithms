@@ -1,4 +1,4 @@
-package li.jesse.test.question.leetcode;
+package li.jesse.question.leetcode;
 
 import org.junit.Test;
 
