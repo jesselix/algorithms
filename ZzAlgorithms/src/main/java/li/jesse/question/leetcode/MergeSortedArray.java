@@ -11,6 +11,8 @@ You may assume that nums1 has enough space (size that is greater or equal to m +
 The number of elements initialized in nums1 and nums2 are m and n respectively.
  */
 
+import li.jesse.util.ArrayUtil;
+
 public class MergeSortedArray
 {
     public static void mergeSortedArray(int[] nums1, int m, int[] nums2, int n)
@@ -41,5 +43,7 @@ public class MergeSortedArray
                 nums1[k--] = nums2[j--];
             }
         }
+
+        ArrayUtil.printArray(nums1);
     }
 }

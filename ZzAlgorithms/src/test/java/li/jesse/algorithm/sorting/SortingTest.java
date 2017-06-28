@@ -1,9 +1,6 @@
 package li.jesse.algorithm.sorting;
 
-import li.jesse.algorithm.sorting.BubbleSort;
-import li.jesse.algorithm.sorting.QuickSort;
-import li.jesse.algorithm.sorting.SelectionSort;
-import li.jesse.common.ArrayUtil;
+import li.jesse.util.ArrayUtil;
 import org.junit.Test;
 
 public class SortingTest

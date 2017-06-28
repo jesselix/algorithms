@@ -1,4 +1,4 @@
-package li.jesse.common;
+package li.jesse.util;
 
 public class ArrayUtil
 {

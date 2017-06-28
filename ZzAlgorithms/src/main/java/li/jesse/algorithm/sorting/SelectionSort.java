@@ -1,6 +1,6 @@
 package li.jesse.algorithm.sorting;
 
-import li.jesse.common.ArrayUtil;
+import li.jesse.util.ArrayUtil;
 
 public class SelectionSort
 {
