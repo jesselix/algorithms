@@ -1,5 +1,5 @@
 package li.jesse.datatype.primitive;
 
-public class Bit
+public class MyBitTest
 {
 }

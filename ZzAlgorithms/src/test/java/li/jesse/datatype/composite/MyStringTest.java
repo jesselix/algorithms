@@ -2,7 +2,7 @@ package li.jesse.datatype.composite;
 
 import org.junit.Test;
 
-public class StringTest
+public class MyStringTest
 {
     private String str = "this is str";
 

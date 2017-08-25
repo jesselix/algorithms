@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.util.Stack;
 
-public class StackTest
+public class MyStackTest
 {
     @Test
     public void testStack()
