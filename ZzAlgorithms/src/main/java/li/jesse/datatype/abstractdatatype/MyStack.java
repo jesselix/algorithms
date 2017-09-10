@@ -1,5 +1,5 @@
 package li.jesse.datatype.abstractdatatype;
 
-public class Stack
+public class MyStack
 {
 }
