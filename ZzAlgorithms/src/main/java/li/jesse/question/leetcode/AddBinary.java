@@ -14,4 +14,5 @@ Return "100".
 
 public class AddBinary
 {
+
 }

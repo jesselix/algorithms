@@ -1,41 +1,47 @@
 package li.jesse.datastructure.tree;
 
-
 public class BinaryTree
 {
-    private Node parent;
-    private Node currentPoint;
-    private StringBuffer sb;
-    private int length = 0;
-
-    // class node
-    public class Node
-    {
-        private int value;
-        private Node leftChild;
-        private Node rightChild;
-
-        public Node(int value, Node leftChild, Node rightChild)
-        {
-            this.value = value;
-            this.leftChild = leftChild;
-            this.rightChild = rightChild;
-        }
-    }
-
-    public Node getParent()
-    {
-        return parent;
-    }
+    public BinaryNode root = null;
 
     public BinaryTree()
     {
-        sb = new StringBuffer();
+        root = new BinaryNode(1, "root: A");
     }
 
-    public void insert(int value)
+    public BinaryTree(String data)
     {
+        root = new BinaryNode(1, data);
+    }
 
+    public int height(){
+        return height(root);
+    }
+
+    private int height(BinaryNode subTree)
+    {
+        if(subTree==null)
+            return 0;
+        else
+        {
+            int i=height(subTree.leftChild);
+            int j=height(subTree.rightChild);
+
+            return (i<j)?(j+1):(i+1);
+        }
+    }
+
+    public int size(){
+        return size(root);
+    }
+
+    private int size(BinaryNode subTree){
+        if(subTree==null){
+            return 0;
+        }else{
+            return 1+size(subTree.leftChild)
+                    +size(subTree.rightChild);
+        }
     }
 }
 
