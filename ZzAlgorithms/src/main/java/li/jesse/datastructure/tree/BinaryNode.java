@@ -2,9 +2,9 @@ package li.jesse.datastructure.tree;
 
 public class BinaryNode
 {
-    private int key = 0;
-    private String data = null;
-    private boolean isVisted = false;
+    public int key = 0;
+    public String data = null;
+    public boolean isVisited = false;
     public BinaryNode leftChild = null;
     public BinaryNode rightChild = null;
 
