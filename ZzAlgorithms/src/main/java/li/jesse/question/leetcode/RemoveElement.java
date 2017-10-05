@@ -15,8 +15,16 @@ Your function should return length = 2, with the first two elements of nums bein
 
 public class RemoveElement
 {
-	public int removeElement(int[] nums, int val)
+	public static int removeElement(int[] nums, int val)
 	{
-		return 1;
+		int pos = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] != val){
+				nums[pos] = nums[i];
+				pos++;
+			}
+		}
+		return pos;
 	}
 }
