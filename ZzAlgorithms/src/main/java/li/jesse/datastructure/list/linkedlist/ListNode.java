@@ -7,4 +7,8 @@ public class ListNode {
     public ListNode(int x) {
         val = x;
     }
+
+    public void display() {
+        System. out.print( val + " ");
+    }
 }
