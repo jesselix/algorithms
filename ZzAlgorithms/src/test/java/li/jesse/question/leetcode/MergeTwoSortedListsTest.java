@@ -9,7 +9,7 @@ public class MergeTwoSortedListsTest {
     public void testMergeTwoSortedLists() {
         ListNode a1 = new ListNode(1);
         ListNode a2 = new ListNode(2);
-        a1.next = a2;
+        a1.setNext(a2);
 
         MergeTwoSortedLists.mergeTwoLists(a1, a2);
     }

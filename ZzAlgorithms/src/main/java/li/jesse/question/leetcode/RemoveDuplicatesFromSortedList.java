@@ -18,14 +18,14 @@ public class RemoveDuplicatesFromSortedList {
         if(head == null)
             return head;
         ListNode pre = head;
-        ListNode cur = head.next;
+        ListNode cur = head.getNext();
 
         while(cur!=null) {
-            if(cur.val == pre.val)
-                pre.next = cur.next;
+            if(cur.getValue() == pre.getValue())
+                pre.setNext(cur.getNext());
             else
                 pre = cur;
-            cur = cur.next;
+            cur = cur.getNext();
         }
         return head;
     }

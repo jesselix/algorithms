@@ -12,7 +12,7 @@ Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node wi
  */
 public class DeleteNodeInALinkedList {
     public void deleteNode(ListNode node) {
-        node.val = node.next.val;
-        node.next = node.next.next;
+        node.setValue(node.getNext().getValue());
+        node.setNext(node.getNext().getNext());
     }
 }
