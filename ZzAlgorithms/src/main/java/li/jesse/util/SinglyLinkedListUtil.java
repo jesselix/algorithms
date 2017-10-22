@@ -4,7 +4,10 @@ import li.jesse.datastructure.list.linkedlist.ListNode;
 import li.jesse.datastructure.list.linkedlist.SinglyLinkedList;
 
 public class SinglyLinkedListUtil {
-
+    /**
+     * print elements of the linked List
+     * @param linkedList
+     */
     public static void printSinglyLinkedList(SinglyLinkedList linkedList) {
         ListNode currentNode = linkedList.getFirstNode();
 
@@ -32,7 +35,7 @@ public class SinglyLinkedListUtil {
      * @param linkedList
      * @return
      */
-    public ListNode deleteFirstNode(SinglyLinkedList linkedList) {
+    public static ListNode deleteFirstNode(SinglyLinkedList linkedList) {
         ListNode tempNode = linkedList.getFirstNode();
         linkedList.setFirstNode(tempNode.getNext());
         return tempNode;
@@ -44,7 +47,7 @@ public class SinglyLinkedListUtil {
      * @param index
      * @param value
      */
-    public void insertNode(SinglyLinkedList linkedList, int index, int value) {
+    public static void insertNode(SinglyLinkedList linkedList, int index, int value) {
         ListNode node = new ListNode(value);
         ListNode currentNode = linkedList.getFirstNode();
         ListNode previousNode = linkedList.getFirstNode();
@@ -66,10 +69,10 @@ public class SinglyLinkedListUtil {
      * @param index
      * @return
      */
-    public ListNode findByPosition(SinglyLinkedList linkedList, int index) {
+    public static ListNode findByPosition(SinglyLinkedList linkedList, int index) {
         ListNode currentNode = linkedList.getFirstNode();
 
-        if (linkedList.getPosition() != index) {
+        while (linkedList.getPosition() != index) {
             currentNode = currentNode.getNext();
             linkedList.setPosition(linkedList.getPosition() + 1);
         }
@@ -83,7 +86,7 @@ public class SinglyLinkedListUtil {
      * @param value
      * @return
      */
-    public ListNode findByValue(SinglyLinkedList linkedList, int value) {
+    public static ListNode findByValue(SinglyLinkedList linkedList, int value) {
         ListNode currentNode = linkedList.getFirstNode();
 
         while (currentNode.getValue() != value) {
