@@ -2,22 +2,22 @@ package li.jesse.datastructure.list.linkedlist;
 
 public class SinglyLinkedList {
     // head node
-    private ListNode firstNode;
+    private ListNode headNode;
     // position of the node
     private int position;
 
     // ----- ----- ----- constructor ----- ----- -----
     public SinglyLinkedList() {
-        this.firstNode = null;
+        this.headNode = null;
     }
 
     // ----- ----- ----- getter & setter ----- ----- -----
-    public ListNode getFirstNode() {
-        return firstNode;
+    public ListNode getHeadNode() {
+        return headNode;
     }
 
-    public void setFirstNode(ListNode firstNode) {
-        this.firstNode = firstNode;
+    public void setHeadNode(ListNode firstNode) {
+        this.headNode = firstNode;
     }
 
     public int getPosition() {

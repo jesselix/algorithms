@@ -9,7 +9,7 @@ public class SinglyLinkedListUtil {
      * @param linkedList
      */
     public static void printSinglyLinkedList(SinglyLinkedList linkedList) {
-        ListNode currentNode = linkedList.getFirstNode();
+        ListNode currentNode = linkedList.getHeadNode();
 
         while (currentNode != null) {
             currentNode.display();
@@ -20,14 +20,14 @@ public class SinglyLinkedListUtil {
     }
 
     /**
-     * add first node
+     * add head node
      * @param linkedList
      * @param value
      */
-    public static void addFirstNode(SinglyLinkedList linkedList, int value) {
+    public static void addHeadNode(SinglyLinkedList linkedList, int value) {
         ListNode node = new ListNode(value);
-        node.setNext(linkedList.getFirstNode());
-        linkedList.setFirstNode(node);
+        node.setNext(linkedList.getHeadNode());
+        linkedList.setHeadNode(node);
     }
 
     /**
@@ -35,9 +35,9 @@ public class SinglyLinkedListUtil {
      * @param linkedList
      * @return
      */
-    public static ListNode deleteFirstNode(SinglyLinkedList linkedList) {
-        ListNode tempNode = linkedList.getFirstNode();
-        linkedList.setFirstNode(tempNode.getNext());
+    public static ListNode deleteHeadNode(SinglyLinkedList linkedList) {
+        ListNode tempNode = linkedList.getHeadNode();
+        linkedList.setHeadNode(tempNode.getNext());
         return tempNode;
     }
 
@@ -49,8 +49,8 @@ public class SinglyLinkedListUtil {
      */
     public static void insertNode(SinglyLinkedList linkedList, int index, int value) {
         ListNode node = new ListNode(value);
-        ListNode currentNode = linkedList.getFirstNode();
-        ListNode previousNode = linkedList.getFirstNode();
+        ListNode currentNode = linkedList.getHeadNode();
+        ListNode previousNode = linkedList.getHeadNode();
 
         while (linkedList.getPosition() != index) {
             previousNode = currentNode;
@@ -70,7 +70,7 @@ public class SinglyLinkedListUtil {
      * @return
      */
     public static ListNode findByPosition(SinglyLinkedList linkedList, int index) {
-        ListNode currentNode = linkedList.getFirstNode();
+        ListNode currentNode = linkedList.getHeadNode();
 
         while (linkedList.getPosition() != index) {
             currentNode = currentNode.getNext();
@@ -87,7 +87,7 @@ public class SinglyLinkedListUtil {
      * @return
      */
     public static ListNode findByValue(SinglyLinkedList linkedList, int value) {
-        ListNode currentNode = linkedList.getFirstNode();
+        ListNode currentNode = linkedList.getHeadNode();
 
         while (currentNode.getValue() != value) {
             if (currentNode.getNext() == null)
@@ -96,5 +96,21 @@ public class SinglyLinkedListUtil {
         }
 
         return currentNode;
+    }
+
+    /**
+     * get length of the linked list from head node
+     * @param head
+     * @return
+     */
+    public static int getLength(ListNode head) {
+        int length = 0;
+
+        while (head != null) {
+            length++;
+            head = head.getNext();
+        }
+
+        return length;
     }
 }

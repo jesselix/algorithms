@@ -8,8 +8,8 @@ public class SinglyLinkedListUtilTest {
     @Test
     public void testSinglyLinkedListUtil() {
         SinglyLinkedList linkedList = new SinglyLinkedList();
-        SinglyLinkedListUtil.addFirstNode(linkedList, 100);
-        SinglyLinkedListUtil.addFirstNode(linkedList, 200);
+        SinglyLinkedListUtil.addHeadNode(linkedList, 100);
+        SinglyLinkedListUtil.addHeadNode(linkedList, 200);
 
         SinglyLinkedListUtil.insertNode(linkedList, 2, 300);
 
