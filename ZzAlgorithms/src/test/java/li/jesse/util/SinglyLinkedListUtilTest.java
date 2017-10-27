@@ -18,4 +18,16 @@ public class SinglyLinkedListUtilTest {
         ListNode node1 = SinglyLinkedListUtil.findByPosition(linkedList, 0);
         System.out.println(node1.getValue());
     }
+
+    @Test
+    public void testBuildSinglyLinkedList() {
+        SinglyLinkedList linkedList = new SinglyLinkedList();
+        int[] array = {10, 12, 14, 16, 18, 20, 22};
+
+//        SinglyLinkedListUtil.buildSinglyLinkedListFromArray(array);
+        linkedList = SinglyLinkedListUtil.buildSinglyLinkedListFromArray(array);
+        linkedList.getHeadNode();
+        System.out.println(SinglyLinkedListUtil.getLength(linkedList.getHeadNode()));
+        SinglyLinkedListUtil.printSinglyLinkedList(linkedList);
+    }
 }

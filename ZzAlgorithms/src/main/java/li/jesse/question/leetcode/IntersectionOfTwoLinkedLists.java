@@ -22,4 +22,14 @@ public class IntersectionOfTwoLinkedLists {
         }
         return (headA != null && headB != null) ? headA : null;
     }
+
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+        ListNode a = headA, b = headB;
+        while (a != b) {
+            a = (a != null) ? a.getNext() : headB;
+            b = (b != null) ? b.getNext() : headA;
+        }
+        return a;
+    }
 }

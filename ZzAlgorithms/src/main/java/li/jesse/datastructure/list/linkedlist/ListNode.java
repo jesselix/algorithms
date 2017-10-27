@@ -7,10 +7,15 @@ public class ListNode {
     private ListNode next;
 
     // ----- ----- ----- constructor ----- ----- -----
+    public ListNode() {
+
+    }
+
     public ListNode(int x) {
         value = x;
     }
 
+    // ----- ----- ----- getter & setter ----- ----- -----
     public int getValue() {
         return value;
     }
