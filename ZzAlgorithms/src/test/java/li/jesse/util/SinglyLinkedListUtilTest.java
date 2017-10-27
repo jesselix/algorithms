@@ -26,7 +26,8 @@ public class SinglyLinkedListUtilTest {
 
 //        SinglyLinkedListUtil.buildSinglyLinkedListFromArray(array);
         linkedList = SinglyLinkedListUtil.buildSinglyLinkedListFromArray(array);
-        linkedList.getHeadNode();
+
+        System.out.println(linkedList.getHeadNode().getValue());
         System.out.println(SinglyLinkedListUtil.getLength(linkedList.getHeadNode()));
         SinglyLinkedListUtil.printSinglyLinkedList(linkedList);
     }
