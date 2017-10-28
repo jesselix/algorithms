@@ -22,13 +22,13 @@ public class SinglyLinkedListUtilTest {
     @Test
     public void testBuildSinglyLinkedList() {
         SinglyLinkedList linkedList = new SinglyLinkedList();
-        int[] array = {10, 12, 14, 16, 18, 20, 22};
+        int[] array = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
 
-//        SinglyLinkedListUtil.buildSinglyLinkedListFromArray(array);
         linkedList = SinglyLinkedListUtil.buildSinglyLinkedListFromArray(array);
-
-        System.out.println(linkedList.getHeadNode().getValue());
-        System.out.println(SinglyLinkedListUtil.getLength(linkedList.getHeadNode()));
         SinglyLinkedListUtil.printSinglyLinkedList(linkedList);
+    }
+
+    public void testListNode() {
+
     }
 }

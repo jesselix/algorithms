@@ -11,6 +11,10 @@ public class SinglyLinkedList {
         this.headNode = null;
     }
 
+    public SinglyLinkedList(ListNode headNode) {
+        this.headNode = headNode;
+    }
+
     // ----- ----- ----- getter & setter ----- ----- -----
     public ListNode getHeadNode() {
         return headNode;

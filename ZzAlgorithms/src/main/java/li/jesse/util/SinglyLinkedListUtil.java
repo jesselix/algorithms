@@ -27,26 +27,6 @@ public class SinglyLinkedListUtil {
         SinglyLinkedList linkedList = new SinglyLinkedList();
         linkedList.setHeadNode(headNode);
 
-//        ListNode headNode = new ListNode();
-//
-//        for (int i = 0; i < array.length; i++) {
-//            ListNode tempNode = new ListNode(array[i]);
-//
-//            if (i == array.length - 1) {
-//                tempNode.setNext(null);
-//            } else {
-//                ListNode tempNode1 = new ListNode(array[i + 1]);
-//                tempNode.setNext(tempNode1);
-//            }
-//
-//            if (i == 0) {
-//                headNode = tempNode;
-//            }
-//        }
-//
-//        SinglyLinkedList linkedList = new SinglyLinkedList();
-//        linkedList.setHeadNode(headNode);
-
         return linkedList;
     }
 
