@@ -5,13 +5,47 @@ import li.jesse.datastructure.list.linkedlist.SinglyLinkedList;
 
 public class SinglyLinkedListUtil {
 
-    public static SinglyLinkedList buildSinglyLinkedListFromArray(int[] array) {
+    /**
+     * build singly linked list from array
+     * @param array
+     * @return
+     */
+    public static SinglyLinkedList buildSinglyLinkedListFromIntArray(int[] array) {
 
         ListNode[] array2 = new ListNode[array.length];
 
         for (int i = array.length - 1; i >= 0; i--) {
             ListNode tempNode = new ListNode();
             tempNode.setValue(array[i]);
+
+            if (i == array.length - 1) {
+                tempNode.setNext(null);
+            }
+            else {
+                tempNode.setNext(array2[i + 1]);
+            }
+
+            array2[i] = tempNode;
+        }
+
+        ListNode headNode = array2[0];
+        SinglyLinkedList linkedList = new SinglyLinkedList();
+        linkedList.setHeadNode(headNode);
+
+        return linkedList;
+    }
+
+    /**
+     * build singly linked list from list node array with null next
+     * @param array
+     * @return
+     */
+    public static SinglyLinkedList buildSinglyLinkedListFromListNodeArrayWithNullNext(ListNode[] array) {
+        ListNode[] array2 = new ListNode[array.length];
+
+        for (int i = array.length - 1; i >= 0; i--) {
+            ListNode tempNode = new ListNode();
+            tempNode.setValue(array[i].getValue());
 
             if (i == array.length - 1) {
                 tempNode.setNext(null);

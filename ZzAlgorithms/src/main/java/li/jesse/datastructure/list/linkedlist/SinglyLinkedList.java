@@ -20,8 +20,8 @@ public class SinglyLinkedList {
         return headNode;
     }
 
-    public void setHeadNode(ListNode firstNode) {
-        this.headNode = firstNode;
+    public void setHeadNode(ListNode headNode) {
+        this.headNode = headNode;
     }
 
     public int getPosition() {
