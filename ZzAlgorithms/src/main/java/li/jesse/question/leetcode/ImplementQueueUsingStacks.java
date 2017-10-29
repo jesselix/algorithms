@@ -21,8 +21,8 @@ import java.util.Stack;
 public class ImplementQueueUsingStacks
 {
     // Push element x to the back of queue.
-    static Stack<Integer> stack=new Stack<>();
-    static Stack<Integer> stack2=new Stack<>();
+    static Stack<Integer> stack = new Stack<>();
+    static Stack<Integer> stack2 = new Stack<>();
 
     public static void push(int x)
     {
@@ -35,7 +35,6 @@ public class ImplementQueueUsingStacks
         {
             stack.push(stack2.pop());
         }
-
     }
 
     // Removes the element from in front of queue.
