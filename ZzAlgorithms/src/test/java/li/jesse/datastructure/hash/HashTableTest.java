@@ -19,15 +19,28 @@ public class HashTableTest {
 
         System.out.println(hashtable);
 
-        Iterator iter = hashtable.entrySet().iterator();
-        while(iter.hasNext()) {
-            Map.Entry entry = (Map.Entry)iter.next();
+        // traverse key-value of the map
+        Iterator iterator = hashtable.entrySet().iterator();
+        while(iterator.hasNext()) {
+            Map.Entry entry = (Map.Entry)iterator.next();
             System.out.println("next : "+ entry.getKey() +" : "+entry.getValue());
         }
 
-        System.out.println("size:"+hashtable.size());
+        System.out.println("size:" + hashtable.size());
 
-        System.out.println("contains key two : " + hashtable.containsKey("two"));
-        System.out.println("contains key five : " + hashtable.containsKey("five"));
+        // contain key
+        System.out.println("contains key two: " + hashtable.containsKey("two"));
+        System.out.println("contains key five: " + hashtable.containsKey("five"));
+
+        // contain value
+        System.out.println("contains value 0: "+hashtable.containsValue(new Integer(0)));
+
+        hashtable.remove("three");
+
+        System.out.println("table:" + hashtable);
+
+        hashtable.clear();
+
+        System.out.println((hashtable.isEmpty() ? "table is empty" : "table is not empty") );
     }
 }
