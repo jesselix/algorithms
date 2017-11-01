@@ -10,8 +10,7 @@ public class IntersectionOfTwoArraysTest {
         int[] array1 = {1, 2, 2, 1};
         int[] array2 = {2, 2};
 
-        int[] array3;
-        array3 = IntersectionOfTwoArrays.intersection(array1, array2);
+        int[] array3 = IntersectionOfTwoArrays.intersection(array1, array2);
 
         ArrayUtil.printArray(array3);
     }
