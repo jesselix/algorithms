@@ -21,6 +21,6 @@ public class VectorTest {
         vectorAddElements();
         vector.set(0, "100");
 
-        System.out.println("vec.indexOf(100):" + vector.indexOf("100"));
+        System.out.println("vector indexOf(100):" + vector.indexOf("100"));
     }
 }
