@@ -26,12 +26,16 @@ public class ArrayListTest {
 
     private static void isRandomAccessSupported(List list) {
         if (list instanceof RandomAccess) {
-            System.out.println("RandomAccess implemented!");
+            System.out.println("Random Access implemented!");
         } else {
-            System.out.println("RandomAccess not implemented!");
+            System.out.println("Random Access not implemented!");
         }
     }
 
+    /**
+     * random access
+     * @param list
+     */
     public static void traverseThroughRandomAccess(List list) {
         long startTime;
         long endTime;
@@ -46,6 +50,10 @@ public class ArrayListTest {
         System.out.println("iterator Through Random Access：" + interval + " ms");
     }
 
+    /**
+     * for2
+     * @param list
+     */
     public static void traverseThroughFor2(List list) {
         long startTime;
         long endTime;
@@ -60,6 +68,10 @@ public class ArrayListTest {
         System.out.println("iterator Through For 2：" + interval + " ms");
     }
 
+    /**
+     * iterator
+     * @param list
+     */
     public static void traverseThroughIterator(List list) {
         long startTime;
         long endTime;
