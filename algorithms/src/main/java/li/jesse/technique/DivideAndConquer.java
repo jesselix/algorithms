@@ -1,4 +1,4 @@
-package li.jesse.algorithm.technique;
+package li.jesse.technique;
 
 /*
 Recursion is a "Programming Paradigm" which is generally used to implement the "Algorithmic Paradigm" Divide and Conquer.

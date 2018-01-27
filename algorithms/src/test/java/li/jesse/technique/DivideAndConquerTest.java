@@ -1,6 +1,6 @@
-package li.jesse.algorithm.technique;
+package li.jesse.technique;
 
-import li.jesse.algorithm.technique.DivideAndConquer;
+import li.jesse.technique.DivideAndConquer;
 import org.junit.Test;
 
 public class DivideAndConquerTest

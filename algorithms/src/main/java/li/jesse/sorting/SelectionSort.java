@@ -1,4 +1,4 @@
-package li.jesse.algorithm.sorting;
+package li.jesse.sorting;
 
 import li.jesse.util.ArrayUtil;
 
