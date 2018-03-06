@@ -1,5 +1,7 @@
 package li.jesse.question.leetcode;
 
+import java.util.HashSet;
+
 /*
 202. Happy Number
 Easy
@@ -18,11 +20,7 @@ Example: 19 is a happy number
     8^2 + 2^2 = 68
     6^2 + 8^2 = 100
     1^2 + 0^2 + 0^2 = 1
-
  */
-
-import java.util.HashSet;
-
 public class HappyNumber
 {
     public static boolean isHappy(int n)
