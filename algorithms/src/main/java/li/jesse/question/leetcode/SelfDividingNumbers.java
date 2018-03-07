@@ -1,5 +1,6 @@
 package li.jesse.question.leetcode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /*
@@ -22,12 +23,15 @@ The boundaries of each input argument are 1 <= left <= right <= 10000.
 public class SelfDividingNumbers {
 
     public static List<Integer> selfDividingNumbers(int left, int right) {
-
+        List<Integer> list = new ArrayList<>();
         for (int i = left; i <= right; i++) {
 
+            if (SelfDividingNumbers.isSelfDividingNumber(i)) {
+                list.add(i);
+            }
         }
 
-        return null;
+        return list;
     }
 
     public static boolean isSelfDividingNumber(int number) {
@@ -42,7 +46,6 @@ public class SelfDividingNumbers {
             }
             if (number2 % mod == 0) {
                 number2 = quotient;
-                continue;
             } else {
                 return false;
             }
