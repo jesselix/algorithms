@@ -52,4 +52,20 @@ public class FindPivotIndex {
         }
         return -1;
     }
+
+    public static int pivotIndex2(int[] nums) {
+        int sum = 0;
+        int sum1 = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
+
+        for (int j = 1; j < nums.length; j++) {
+            sum1 += nums[j - 1];
+            if (sum1 == (sum - nums[j]) * 0.5) {
+                return j;
+            }
+        }
+        return -1;
+    }
 }

@@ -14,5 +14,10 @@ public class FindPivotIndexTest {
         System.out.println(FindPivotIndex.pivotIndex(nums2));
         System.out.println(FindPivotIndex.pivotIndex(nums3));
         System.out.println(FindPivotIndex.pivotIndex(nums4));
+        System.out.println();
+        System.out.println(FindPivotIndex.pivotIndex2(nums1));
+        System.out.println(FindPivotIndex.pivotIndex2(nums2));
+        System.out.println(FindPivotIndex.pivotIndex2(nums3));
+        System.out.println(FindPivotIndex.pivotIndex2(nums4));
     }
 }
