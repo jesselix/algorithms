@@ -1,5 +1,7 @@
 package li.jesse.datastructure.tree;
 
+import li.jesse.datastructure.tree.binarytree.BinaryNode;
+import li.jesse.datastructure.tree.binarytree.BinaryTree;
 import org.junit.Test;
 
 public class BinaryTreeTest

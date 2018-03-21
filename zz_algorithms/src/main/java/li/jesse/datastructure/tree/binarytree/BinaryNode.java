@@ -1,4 +1,4 @@
-package li.jesse.datastructure.tree;
+package li.jesse.datastructure.tree.binarytree;
 
 public class BinaryNode
 {

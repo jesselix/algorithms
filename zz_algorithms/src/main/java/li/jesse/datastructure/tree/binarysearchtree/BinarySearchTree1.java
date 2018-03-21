@@ -1,12 +1,16 @@
-package li.jesse.datastructure.tree;
+package li.jesse.datastructure.tree.binarysearchtree;
 
-public class BinarySearchTree<T extends Comparable<T>>
+public class BinarySearchTree1<T extends Comparable<T>>
 {
     private BinarySearchNode<T> mRoot;
 
+    public BinarySearchTree1() {
+        mRoot = null;
+    }
+
     private void preOrder(BinarySearchNode<T> tree) {
         if(tree != null) {
-            System.out.print(tree.key+" ");
+            System.out.print(tree.key + " ");
             preOrder(tree.left);
             preOrder(tree.right);
         }
@@ -19,7 +23,7 @@ public class BinarySearchTree<T extends Comparable<T>>
     private void inOrder(BinarySearchNode<T> tree) {
         if(tree != null) {
             inOrder(tree.left);
-            System.out.print(tree.key+" ");
+            System.out.print(tree.key + " ");
             inOrder(tree.right);
         }
     }
