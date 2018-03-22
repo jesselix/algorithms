@@ -17,6 +17,10 @@ public class ArrayUtil {
         array[index1] = array[index2];
         array[index2] = temp;
     }
+
+    public static void generateArrayWithRandomInt() {
+
+    }
 }
 
 
