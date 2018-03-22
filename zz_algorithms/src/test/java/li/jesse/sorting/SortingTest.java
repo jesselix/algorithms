@@ -33,6 +33,14 @@ public class SortingTest
     }
 
     @Test
+    public void testCocktailShakerSort() {
+        testArray = CocktailShakerSort.cocktailShakerSort(testArray);
+
+        System.out.println();
+        ArrayUtil.printArray(testArray);
+    }
+
+    @Test
     public void testQuickSort() {
         QuickSort quickSort = new QuickSort();
         quickSort.quickSort(testArray);
