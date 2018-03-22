@@ -2,19 +2,45 @@ package li.jesse.sorting;
 
 public class BubbleSort
 {
-	public static int[] bubbleSort(int[] arr) {
-		int i, j, temp, len = arr.length;
+	public static int[] bubbleSort(int[] array) {
+		int i, j, temp, length = array.length;
+		int x = 0;
 		
-		for (i = 0; i < len - 1; i++) {
-			for (j = 0; j < len - 1 - i; j++) {
-				if (arr[j] > arr[j + 1]) {
-					temp = arr[j];
-					arr[j] = arr[j + 1];
-					arr[j + 1] = temp;
+		for (i = 0; i < length - 1; i++) {
+			for (j = 0; j < length - 1 - i; j++) {
+				if (array[j] > array[j + 1]) {
+					temp = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
 				}
+				x++;
+				System.out.print(x + " ");
 			}
 		}
 		
-		return arr;
+		return array;
+	}
+
+	public static int[] bubbleSortWithSwappedFlag(int[] array) {
+		int i, j, temp, length = array.length;
+		// if swapped is false, it means the array is ordered
+		boolean swapped = true;
+		int x = 0;
+
+		for (i = 0; i < length - 1 && swapped; i++) {
+			swapped = false;
+			for (j = 0; j < length - 1 - i; j++) {
+				if (array[j] > array[j + 1]) {
+					temp = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
+					swapped = true;
+				}
+				x++;
+				System.out.print(x + " ");
+			}
+		}
+
+		return array;
 	}
 }

@@ -8,35 +8,46 @@ import org.junit.Test;
 
 public class SortingTest
 {
-    int[] numbers = {4, 9, 5, 8, 7, 0, 1, 3, 2, 6};
-    int length = numbers.length;
+    private int[] testArray = {4, 9, 5, 8, 7, 0, 1, 3, 2, 6};
+    private int[] orderedTestArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    int length = testArray.length;
 
     @Test
-    public void testBubbleSort()
-    {
-        numbers = BubbleSort.bubbleSort(numbers);
+    public void testBubbleSort() {
+        testArray = BubbleSort.bubbleSort(testArray);
 
-        ArrayUtil.printArray(numbers);
+        System.out.println();
+        ArrayUtil.printArray(testArray);
     }
 
     @Test
-    public void testQuickSort()
-    {
+    public void bubbleSortWithSwappedFlag() {
+        testArray = BubbleSort.bubbleSortWithSwappedFlag(testArray);
+        System.out.println();
+        ArrayUtil.printArray(testArray);
+        System.out.println("\n");
+        testArray = BubbleSort.bubbleSortWithSwappedFlag(orderedTestArray);
+        System.out.println();
+        ArrayUtil.printArray(orderedTestArray);
+    }
+
+    @Test
+    public void testQuickSort() {
         QuickSort quickSort = new QuickSort();
-        quickSort.quickSort(numbers);
+        quickSort.quickSort(testArray);
 //        for (int i : numbers)
 //        {
 //            System.out.print(i + " ");
 //        }
 
-        ArrayUtil.printArray(numbers);
+        ArrayUtil.printArray(testArray);
     }
 
     @Test
-    public void testSelectionSort()
-    {
-        SelectionSort.selectionSort(numbers);
-        ArrayUtil.printArray(numbers);
+    public void testSelectionSort() {
+        SelectionSort.selectionSort(testArray);
+        ArrayUtil.printArray(testArray);
     }
 
 }
