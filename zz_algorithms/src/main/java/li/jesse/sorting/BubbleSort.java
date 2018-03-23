@@ -1,5 +1,7 @@
 package li.jesse.sorting;
 
+import li.jesse.util.ArrayUtil;
+
 public class BubbleSort
 {
 	public static int[] bubbleSort(int[] array) {
@@ -9,15 +11,15 @@ public class BubbleSort
 		for (i = 0; i < length - 1; i++) {
 			for (j = 0; j < length - 1 - i; j++) {
 				if (array[j] > array[j + 1]) {
-					temp = array[j];
-					array[j] = array[j + 1];
-					array[j + 1] = temp;
+//					temp = array[j];
+//					array[j] = array[j + 1];
+//					array[j + 1] = temp;
+					ArrayUtil.swap(array, j, j + 1);
 				}
 				x++;
-				System.out.print(x + " ");
 			}
 		}
-		
+		System.out.println("times of operation: " + x);
 		return array;
 	}
 
@@ -37,10 +39,9 @@ public class BubbleSort
 					swapped = true;
 				}
 				x++;
-				System.out.print(x + " ");
 			}
 		}
-
+		System.out.println("times of operation: " + x);
 		return array;
 	}
 }
