@@ -1,5 +1,5 @@
-# Zz Algorithms
+# Algorithms
 
 Algorithms Knowledge and Solutions
 
-GitBook: https://jesselix.gitbooks.io/zz-algorithms/
+GitBook: https://jesselix.gitbooks.io/algorithms/
