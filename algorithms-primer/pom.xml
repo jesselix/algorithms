@@ -6,12 +6,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>li.jesse</groupId>
-    <artifactId>algorithms</artifactId>
+    <artifactId>algorithms-primer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <url>https://github.com/jesselix/algorithms</url>
-    <description>Algorithms common knowledge</description>
+    <description>Algorithms knowledge primer</description>
 
     <dependencies>
         <dependency>
@@ -23,7 +23,7 @@
     </dependencies>
 
     <build>
-        <finalName>algorithms</finalName>
+        <finalName>algorithms-primer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
