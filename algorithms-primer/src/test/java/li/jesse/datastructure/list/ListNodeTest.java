@@ -1,7 +1,7 @@
 package li.jesse.datastructure.list;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
-import li.jesse.datastructure.list.linkedlist.SinglyLinkedList;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyLinkedList;
 import li.jesse.util.SinglyLinkedListUtil;
 import org.junit.Test;
 

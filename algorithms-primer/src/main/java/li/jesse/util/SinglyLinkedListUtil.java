@@ -1,7 +1,7 @@
 package li.jesse.util;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
-import li.jesse.datastructure.list.linkedlist.SinglyLinkedList;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyLinkedList;
 
 public class SinglyLinkedListUtil {
 

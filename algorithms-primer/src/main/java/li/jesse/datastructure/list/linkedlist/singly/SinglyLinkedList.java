@@ -1,4 +1,6 @@
-package li.jesse.datastructure.list.linkedlist;
+package li.jesse.datastructure.list.linkedlist.singly;
+
+import li.jesse.datastructure.list.linkedlist.ListNode;
 
 public class SinglyLinkedList {
     // head node

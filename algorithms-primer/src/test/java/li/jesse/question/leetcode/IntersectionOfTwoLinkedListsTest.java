@@ -1,8 +1,7 @@
 package li.jesse.question.leetcode;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
-import li.jesse.datastructure.list.linkedlist.SinglyLinkedList;
-import li.jesse.util.SinglyLinkedListUtil;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyLinkedList;
 import org.junit.Test;
 
 public class IntersectionOfTwoLinkedListsTest {
