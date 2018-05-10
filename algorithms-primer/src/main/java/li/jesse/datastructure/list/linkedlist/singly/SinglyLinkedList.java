@@ -6,9 +6,9 @@ public class SinglyLinkedList {
     // head node
     private ListNode headNode;
     // position of the node
-    private int position;
+    private int position = 0;
 
-    // ----- ----- ----- constructor ----- ----- -----
+    // *********************** constructors ***********************
     public SinglyLinkedList() {
         this.headNode = null;
     }
@@ -17,7 +17,7 @@ public class SinglyLinkedList {
         this.headNode = headNode;
     }
 
-    // ----- ----- ----- getter & setter ----- ----- -----
+    // ******************** getters & setters *********************
     public ListNode getHeadNode() {
         return headNode;
     }
