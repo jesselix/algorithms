@@ -1,4 +1,4 @@
-package li.jesse.datastructure.list.singly;
+package li.jesse.datastructure.list.linkedlist.singly;
 
 import org.junit.Test;
 
