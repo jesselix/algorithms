@@ -40,6 +40,6 @@ public class SinglyListNode {
     }
 
     public void display() {
-        System. out.print( value + " ");
+        System.out.print( value + " ");
     }
 }
