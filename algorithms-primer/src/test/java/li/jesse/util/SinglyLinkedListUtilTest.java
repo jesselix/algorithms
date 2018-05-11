@@ -2,6 +2,7 @@ package li.jesse.util;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
 import li.jesse.datastructure.list.linkedlist.singly.SinglyLinkedList;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyListNode;
 import org.junit.Test;
 
 public class SinglyLinkedListUtilTest {
@@ -15,7 +16,7 @@ public class SinglyLinkedListUtilTest {
 
         SinglyLinkedListUtil.printSinglyLinkedList(linkedList);
 
-        ListNode node1 = SinglyLinkedListUtil.findByPosition(linkedList, 0);
+        SinglyListNode node1 = SinglyLinkedListUtil.findByPosition(linkedList, 0);
         System.out.println(node1.getValue());
     }
 
@@ -30,11 +31,11 @@ public class SinglyLinkedListUtilTest {
 
     @Test
     public void testBuildSinglyLinkedListFromListNodeArrayWithNullNext() {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
-        ListNode[] array = {node1, node2, node3, node4};
+        SinglyListNode node1 = new SinglyListNode(1);
+        SinglyListNode node2 = new SinglyListNode(2);
+        SinglyListNode node3 = new SinglyListNode(3);
+        SinglyListNode node4 = new SinglyListNode(4);
+        SinglyListNode[] array = {node1, node2, node3, node4};
 
         SinglyLinkedList linkedList = SinglyLinkedListUtil.buildSinglyLinkedListFromListNodeArrayWithNullNext(array);
 

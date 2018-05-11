@@ -1,6 +1,7 @@
 package li.jesse.question.leetcode;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyListNode;
 
 /*
 206. Reverse Linked List
@@ -13,12 +14,12 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
  */
 public class ReverseLinkedList {
-    public static ListNode reverseList(ListNode head) {
+    public static SinglyListNode reverseList(SinglyListNode head) {
         if(head == null || head.getNext() == null) return head;
-        ListNode p1 = head;
-        ListNode p2 = p1.getNext();
+        SinglyListNode p1 = head;
+        SinglyListNode p2 = p1.getNext();
         while(p2 != null){
-            ListNode tmp = p2.getNext();
+            SinglyListNode tmp = p2.getNext();
             p2.setNext(p1);
             p1 = p2;
             p2 = tmp;

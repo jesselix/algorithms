@@ -1,6 +1,7 @@
 package li.jesse.question.leetcode;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyListNode;
 
 /*
 83. Remove Duplicates from Sorted List
@@ -13,11 +14,11 @@ Given 1->1->2, return 1->2.
 Given 1->1->2->3->3, return 1->2->3.
  */
 public class RemoveDuplicatesFromSortedList {
-    public static ListNode deleteDuplicates(ListNode head) {
+    public static SinglyListNode deleteDuplicates(SinglyListNode head) {
         if(head == null)
             return head;
-        ListNode pre = head;
-        ListNode cur = head.getNext();
+        SinglyListNode pre = head;
+        SinglyListNode cur = head.getNext();
 
         while(cur!=null) {
             if(cur.getValue() == pre.getValue())

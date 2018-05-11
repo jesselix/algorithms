@@ -2,6 +2,7 @@ package li.jesse.util;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
 import li.jesse.datastructure.list.linkedlist.singly.SinglyLinkedList;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyListNode;
 
 public class SinglyLinkedListUtil {
 
@@ -12,10 +13,10 @@ public class SinglyLinkedListUtil {
      */
     public static SinglyLinkedList buildSinglyLinkedListFromIntArray(int[] array) {
 
-        ListNode[] array2 = new ListNode[array.length];
+        SinglyListNode[] array2 = new SinglyListNode[array.length];
 
         for (int i = array.length - 1; i >= 0; i--) {
-            ListNode tempNode = new ListNode();
+            SinglyListNode tempNode = new SinglyListNode();
             tempNode.setValue(array[i]);
 
             if (i == array.length - 1) {
@@ -28,7 +29,7 @@ public class SinglyLinkedListUtil {
             array2[i] = tempNode;
         }
 
-        ListNode headNode = array2[0];
+        SinglyListNode headNode = array2[0];
         SinglyLinkedList linkedList = new SinglyLinkedList();
         linkedList.setHeadNode(headNode);
 
@@ -40,11 +41,11 @@ public class SinglyLinkedListUtil {
      * @param array
      * @return
      */
-    public static SinglyLinkedList buildSinglyLinkedListFromListNodeArrayWithNullNext(ListNode[] array) {
-        ListNode[] array2 = new ListNode[array.length];
+    public static SinglyLinkedList buildSinglyLinkedListFromListNodeArrayWithNullNext(SinglyListNode[] array) {
+        SinglyListNode[] array2 = new SinglyListNode[array.length];
 
         for (int i = array.length - 1; i >= 0; i--) {
-            ListNode tempNode = new ListNode();
+            SinglyListNode tempNode = new SinglyListNode();
             tempNode.setValue(array[i].getValue());
 
             if (i == array.length - 1) {
@@ -57,7 +58,7 @@ public class SinglyLinkedListUtil {
             array2[i] = tempNode;
         }
 
-        ListNode headNode = array2[0];
+        SinglyListNode headNode = array2[0];
         SinglyLinkedList linkedList = new SinglyLinkedList();
         linkedList.setHeadNode(headNode);
 
@@ -69,7 +70,7 @@ public class SinglyLinkedListUtil {
      * @param linkedList
      */
     public static void printSinglyLinkedList(SinglyLinkedList linkedList) {
-        ListNode currentNode = linkedList.getHeadNode();
+        SinglyListNode currentNode = linkedList.getHeadNode();
 
         while (currentNode != null) {
             currentNode.display();
@@ -85,7 +86,7 @@ public class SinglyLinkedListUtil {
      * @param value
      */
     public static void addHeadNode(SinglyLinkedList linkedList, int value) {
-        ListNode node = new ListNode(value);
+        SinglyListNode node = new SinglyListNode(value);
         node.setNext(linkedList.getHeadNode());
         linkedList.setHeadNode(node);
     }
@@ -95,8 +96,8 @@ public class SinglyLinkedListUtil {
      * @param linkedList
      * @return
      */
-    public static ListNode deleteHeadNode(SinglyLinkedList linkedList) {
-        ListNode tempNode = linkedList.getHeadNode();
+    public static SinglyListNode deleteHeadNode(SinglyLinkedList linkedList) {
+        SinglyListNode tempNode = linkedList.getHeadNode();
         linkedList.setHeadNode(tempNode.getNext());
         return tempNode;
     }
@@ -108,9 +109,9 @@ public class SinglyLinkedListUtil {
      * @param value
      */
     public static void insertNode(SinglyLinkedList linkedList, int index, int value) {
-        ListNode node = new ListNode(value);
-        ListNode currentNode = linkedList.getHeadNode();
-        ListNode previousNode = linkedList.getHeadNode();
+        SinglyListNode node = new SinglyListNode(value);
+        SinglyListNode currentNode = linkedList.getHeadNode();
+        SinglyListNode previousNode = linkedList.getHeadNode();
 
         while (linkedList.getPosition() != index) {
             previousNode = currentNode;
@@ -129,8 +130,8 @@ public class SinglyLinkedListUtil {
      * @param index
      * @return
      */
-    public static ListNode findByPosition(SinglyLinkedList linkedList, int index) {
-        ListNode currentNode = linkedList.getHeadNode();
+    public static SinglyListNode findByPosition(SinglyLinkedList linkedList, int index) {
+        SinglyListNode currentNode = linkedList.getHeadNode();
 
         while (linkedList.getPosition() != index) {
             currentNode = currentNode.getNext();
@@ -146,8 +147,8 @@ public class SinglyLinkedListUtil {
      * @param value
      * @return
      */
-    public static ListNode findByValue(SinglyLinkedList linkedList, int value) {
-        ListNode currentNode = linkedList.getHeadNode();
+    public static SinglyListNode findByValue(SinglyLinkedList linkedList, int value) {
+        SinglyListNode currentNode = linkedList.getHeadNode();
 
         while (currentNode.getValue() != value) {
             if (currentNode.getNext() == null)
@@ -163,7 +164,7 @@ public class SinglyLinkedListUtil {
      * @param head
      * @return
      */
-    public static int getLength(ListNode head) {
+    public static int getLength(SinglyListNode head) {
         int length = 0;
 
         while (head != null) {

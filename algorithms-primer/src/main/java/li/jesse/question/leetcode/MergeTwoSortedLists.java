@@ -1,6 +1,7 @@
 package li.jesse.question.leetcode;
 
 import li.jesse.datastructure.list.linkedlist.ListNode;
+import li.jesse.datastructure.list.linkedlist.singly.SinglyListNode;
 
 /*
 21. Merge Two Sorted Lists
@@ -11,8 +12,8 @@ The new list should be made by splicing together the nodes of the first two list
  */
 
 public class MergeTwoSortedLists {
-    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode dummy = new ListNode(-1), cur = dummy;
+    public static SinglyListNode mergeTwoLists(SinglyListNode l1, SinglyListNode l2) {
+        SinglyListNode dummy = new SinglyListNode(-1), cur = dummy;
         while (l1 != null && l2 != null) {
             if (l1.getValue() < l2.getValue()) {
                 cur.setNext(l1);;

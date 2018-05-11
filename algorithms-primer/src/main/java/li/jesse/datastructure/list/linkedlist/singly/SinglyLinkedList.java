@@ -4,7 +4,7 @@ import li.jesse.datastructure.list.linkedlist.ListNode;
 
 public class SinglyLinkedList {
     // head node
-    private ListNode headNode;
+    private SinglyListNode headNode;
     // position of the node
     private int position = 0;
 
@@ -13,16 +13,16 @@ public class SinglyLinkedList {
         this.headNode = null;
     }
 
-    public SinglyLinkedList(ListNode headNode) {
+    public SinglyLinkedList(SinglyListNode headNode) {
         this.headNode = headNode;
     }
 
     // **************************************** getters & setters *****************************************
-    public ListNode getHeadNode() {
+    public SinglyListNode getHeadNode() {
         return headNode;
     }
 
-    public void setHeadNode(ListNode headNode) {
+    public void setHeadNode(SinglyListNode headNode) {
         this.headNode = headNode;
     }
 
