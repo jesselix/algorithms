@@ -7,7 +7,7 @@ public class SinglyListNode {
     // pointer to the next node
     private SinglyListNode next;
 
-    // *********************** constructors ***********************
+    // ******************************************* constructors *******************************************
     public SinglyListNode() {
 
     }
@@ -22,7 +22,7 @@ public class SinglyListNode {
         this.next = next;
     }
 
-    // ******************** getters & setters *********************
+    // **************************************** getters & setters *****************************************
     public int getValue() {
         return value;
     }
