@@ -36,7 +36,20 @@ public class AddTwoNumbers {
             goNode2 = goNode2.next;
         }
 
-        System.out.println(x + y);
+        int z = x + y;
+        System.out.println(z);
+
+        int div = 1;
+        int length = 1;
+
+        while (z / div >= 10) {
+            div *= 10;
+            length++;
+        }
+
+        for (int i = 0; i < length; i++) {
+
+        }
 
         return null;
     }
