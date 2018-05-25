@@ -18,7 +18,7 @@ public class SortingTest
     }
 
     @Test
-    public void bubbleSortWithSwappedFlag() {
+    public void testBubbleSortWithSwappedFlag() {
         testArray = BubbleSort.bubbleSortWithSwappedFlag(testArray);
         ArrayUtil.printArray(testArray);
         System.out.println("\n");
