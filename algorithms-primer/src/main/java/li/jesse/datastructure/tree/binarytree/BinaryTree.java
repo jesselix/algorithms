@@ -1,148 +1,43 @@
 package li.jesse.datastructure.tree.binarytree;
 
-public class BinaryTree
-{
-    public BinaryNode root = null;
+import java.util.LinkedList;
+import java.util.Queue;
 
-    // ----- ----- Constructors ----- -----
+public class BinaryTree<E extends Comparable<E>> {
 
-    public BinaryTree()
-    {
-        root = new BinaryNode(1, "root: A");
+    private BinaryTreeNode<E> root;
+
+    private int size;
+
+    public BinaryTree() {
+        root = null;
     }
 
-    public BinaryTree(String data)
-    {
-        root = new BinaryNode(1, data);
-    }
-
-    // ----- ----- Height ----- -----
-
-    public int height()
-    {
-        return height(root);
-    }
-
-    private int height(BinaryNode subTree)
-    {
-        if(subTree==null)
-            return 0;
-        else
-        {
-            int i = height(subTree.leftChild);
-            int j = height(subTree.rightChild);
-
-            return (i < j) ? (j + 1) : (i + 1);
-        }
-    }
-
-    // ----- ----- Size ----- -----
-
-    public int size()
-    {
-        return size(root);
-    }
-
-    private int size(BinaryNode subTree)
-    {
-        if(subTree == null)
-            return 0;
-        else
-            return size(subTree.leftChild) + size(subTree.rightChild) + 1;
-    }
-
-    // ----- ----- Parent ----- -----
-
-    public BinaryNode parent(BinaryNode element)
-    {
-        return (root == null || root==element) ? null : parent(root, element);
-    }
-
-    public BinaryNode parent(BinaryNode subTree,BinaryNode element)
-    {
-        if(subTree==null)
-            return null;
-
-        if(subTree.leftChild == element || subTree.rightChild == element)
-            return subTree;
-
-        BinaryNode p;
-
-        if((p=parent(subTree.leftChild, element))!=null)
-            return p;
-        else
-            return parent(subTree.rightChild, element);
-    }
-
-    // ----- ----- Nodes: root & children ----- -----
-
-    public BinaryNode getLeftChildNode(BinaryNode element)
-    {
-        return (element!=null)?element.leftChild:null;
-    }
-
-    public BinaryNode getRightChildNode(BinaryNode element)
-    {
-        return (element!=null)?element.rightChild:null;
-    }
-
-    public BinaryNode getRoot()
-    {
+    public BinaryTreeNode<E> getRoot() {
         return root;
     }
 
-    // ----- ----- Actions ----- -----
-
-    public void destroy(BinaryNode subTree)
-    {
-        if(subTree!=null)
-        {
-            destroy(subTree.leftChild);
-            destroy(subTree.rightChild);
-            subTree=null;
+    public void insertNode(E value) {
+        if (root == null) {
+            root = new BinaryTreeNode<E>(value);
+            return;
         }
-    }
-
-    public void visited(BinaryNode subTree)
-    {
-        subTree.isVisited = true;
-        System.out.println("key:"+subTree.key+"--name:"+subTree.data);;
-    }
-
-    // ----- ----- Traverses ----- -----
-
-    public void preOrder(BinaryNode subTree)
-    {
-        if(subTree != null)
-        {
-            visited(subTree);
-            preOrder(subTree.leftChild);
-            preOrder(subTree.rightChild);
-        }
-    }
-
-    public void inOrder(BinaryNode subTree)
-    {
-        if(subTree != null)
-        {
-            inOrder(subTree.leftChild);
-            visited(subTree);
-            inOrder(subTree.rightChild);
-        }
-    }
-
-    public void postOrder(BinaryNode subTree)
-    {
-        if (subTree != null)
-        {
-            postOrder(subTree.leftChild);
-            postOrder(subTree.rightChild);
-            visited(subTree);
+        BinaryTreeNode<E> currentNode = root;
+        while (true) {
+            if (value.compareTo(currentNode.getValue()) > 0) {
+                if (currentNode.getRightChild() == null) {
+                    currentNode.setRightChild(new BinaryTreeNode<E>(value));
+                    break;
+                }
+                currentNode = currentNode.getRightChild();
+            } else {
+                if (currentNode.getLeftChild() == null) {
+                    currentNode.setLeftChild(new BinaryTreeNode<E>(value));
+                    break;
+                }
+                currentNode = currentNode.getLeftChild();
+            }
         }
     }
 
 }
-
-
-
-
