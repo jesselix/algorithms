@@ -1,6 +1,5 @@
-package li.jesse.technique;
+package li.jesse.recursion;
 
-import li.jesse.technique.DivideAndConquer;
 import org.junit.Test;
 
 public class DivideAndConquerTest
