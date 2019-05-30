@@ -8,8 +8,9 @@ public class SecondLargestNumber {
             if (arr[i] > max) {
                 second = max;
                 max = arr[i];
-            } else if (arr[i] > second)
+            } else if (arr[i] > second) {
                 second = arr[i];
+            }
         }
         return second;
     }
