@@ -1,33 +1,37 @@
 package li.jesse.leetcode;
 
-/*
-26. Remove Duplicates from Sorted Array
-Easy
+import java.util.HashSet;
 
-Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
-Do not allocate extra space for another array, you must do this in place with constant memory.
+public class RemoveDuplicatesFromSortedArray {
 
-For example,
-Given input array nums = [1,1,2],
+	public static int removeDuplicatesFromSortedArray(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return 0;
+		}
 
-Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. 
-It doesn't matter what you leave beyond the new length.
- */
-
-public class RemoveDuplicatesFromSortedArray
-{
-	public static int removeDuplicatesFromSortedArray(int[] nums)
-	{
 		int count = 1;
 		
-		for (int i = 0; i < nums.length - 1; i++)
-		{
-			if (nums[i + 1] != nums[i])
-			{
+		for (int i = 0; i < nums.length - 1; i++) {
+			if (nums[i + 1] != nums[i]) {
 				count++;
 			}
 		}
-		
+
 		return count;
 	}
+
+	public static int removeDuplicatesFromSortedArray2(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return 0;
+		}
+
+		HashSet<Integer> set = new HashSet<>();
+
+		for (int i = 0; i < nums.length; i++) {
+			set.add(nums[i]);
+		}
+
+		return set.size();
+	}
+
 }

@@ -1,9 +1,9 @@
 package li.jesse.leetcode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class ContainsDuplicateTest
-{
+public class ContainsDuplicateTest {
+
     private int[] testArray =  {1, 2, 3, 4, 5, 4};
 
     @Test

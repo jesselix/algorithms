@@ -1,13 +1,5 @@
 package li.jesse.leetcode;
 
-/*
-69. Sqrt(x)
-Easy
-
-Implement int sqrt(int x).
-Compute and return the square root of x.
- */
-
 public class SqrtX
 {
     public static int sqrt(int x) {

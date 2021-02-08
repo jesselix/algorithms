@@ -1,12 +1,12 @@
 package li.jesse.leetcode;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 public class AddBinaryTest
 {
     @Test
-    public void testAddBinary()
-    {
+    public void testAddBinary() {
         String a1 = "11";
         String b1 = "1";
 

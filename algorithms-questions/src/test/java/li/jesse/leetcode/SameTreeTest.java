@@ -1,7 +1,7 @@
 package li.jesse.leetcode;
 
 import li.jesse.data.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SameTreeTest {
 

@@ -1,12 +1,5 @@
 package li.jesse.leetcode;
 
-/*
-204. Count Primes
-Easy
-
-Count the number of prime numbers less than a non-negative number, n.
- */
-
 public class CountPrimes
 {
     public static int countPrimes(int n)
