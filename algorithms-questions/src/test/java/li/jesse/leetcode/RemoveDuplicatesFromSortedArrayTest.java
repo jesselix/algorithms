@@ -16,5 +16,11 @@ public class RemoveDuplicatesFromSortedArrayTest {
 
         System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicatesFromSortedArray2(array1));
         System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicatesFromSortedArray2(array2));
+
+        System.out.println();
+
+        System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicatesFromSortedArray3(array1));
+        System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicatesFromSortedArray3(array2));
     }
+
 }
