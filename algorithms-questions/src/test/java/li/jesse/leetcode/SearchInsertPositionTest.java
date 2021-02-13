@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class SearchInsertPositionTest {
 
-    int[] array1 = {1,3,5,6};
+    int[] array1 = {1, 3, 5, 6};
     int[] array2 = {1};
 
     @Test
